@@ -25,6 +25,7 @@ RUN python -m venv /py && \
 ENV PATH="/py/bin:$PATH"
 
 USER django-admin
+# Hello
 
 
 
