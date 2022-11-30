@@ -2,7 +2,7 @@
 Sample Tests
 """
 
-from django.test import SimpleTestCase
+from django.test import SimpleTestCase # type: ignore
 
 from app import calc  # type: ignore
 
@@ -12,4 +12,4 @@ class CalcTests(SimpleTestCase):
 
         res = calc.add(5, 6)
 
-        self.assertEquals(res, 11)
+        self.assertEqual(res, 11)
